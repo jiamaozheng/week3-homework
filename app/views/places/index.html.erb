@@ -4,6 +4,7 @@
       <p>
         <%= link_to place.title, "/places/#{place.title}" %>
          ($<%= place.admission_price.to_f/100 %>)
+         <a href="/places/<%= place.title %>/delete">(delete)</a>
       </p>
     </li>
   <% end %>

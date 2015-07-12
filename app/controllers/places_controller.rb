@@ -8,5 +8,10 @@ class PlacesController < ApplicationController
     @place = Place.find_by(:title => params["id"])
   end
 
+  def delete
+    place_to_be_deleted = Place.find_by(:title => params["id"])
+    place_to_be_deleted.delete
+    redirect_to '/'
+  end
 
 end

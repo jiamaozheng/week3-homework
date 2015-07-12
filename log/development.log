@@ -1677,3 +1677,910 @@ Processing by PlacesController#index as HTML
   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
   Rendered places/index.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:09:24 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 59ms (Views: 47.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum" for 127.0.0.1 at 2015-07-12 16:09:27 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/36/delete" for 127.0.0.1 at 2015-07-12 16:09:31 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = '36' LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.1ms)
+
+
+Started GET "/places/36/delete" for 127.0.0.1 at 2015-07-12 16:09:31 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = '36' LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.9ms)
+
+
+Started GET "/places/39/delete" for 127.0.0.1 at 2015-07-12 16:09:48 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"39"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = '39' LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (86.8ms)
+
+
+Started GET "/places/39/delete" for 127.0.0.1 at 2015-07-12 16:09:49 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = '39' LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:11:34 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:11:36 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  DELETE FROM "places" WHERE "places"."id" = 36
+Redirected to http://localhost:3000/places
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:11:36 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)/delete" for 127.0.0.1 at 2015-07-12 16:20:32 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 37[0m
+Redirected to http://localhost:3000/places
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:20:32 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History/delete" for 127.0.0.1 at 2015-07-12 16:20:33 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM "places" WHERE "places"."id" = 38
+Redirected to http://localhost:3000/places
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:20:33 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Shedd%20Aquarium/delete" for 127.0.0.1 at 2015-07-12 16:20:34 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 39[0m
+Redirected to http://localhost:3000/places
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:20:34 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Adler%20Planetarium/delete" for 127.0.0.1 at 2015-07-12 16:20:35 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM "places" WHERE "places"."id" = 40
+Redirected to http://localhost:3000/places
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:20:35 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:20:40 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM "places"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1500], ["description", "The Chicago Children's Museum is located at Navy Pier in Chicago, Illinois. Where play and learning connect! "], ["photo_url", "http://cdn.c.photoshelter.com/img-get/I0000bOjzUksozlg/s/860/860/MG-3206-Navy-Pier-Chicago-Childrens-Museum.jpg"], ["title", "Chicago Children's Museum"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 2500], ["description", "The Museum of Science and Industry (MSI) is located in Chicago, Illinois, in Jackson Park, in the Hyde Park neighborhood between Lake Michigan and The University of Chicago."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/4/4e/Museum_of_Science_and_Industry.jpg"], ["title", "Museum of Science and Industry (Chicago)"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 3800], ["description", "The Field Museum of Natural History, located in Chicago, Illinois, USA, is one of the largest natural history museums in the world."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/8/89/Field_Museum_of_Natural_History.jpg"], ["title", "Field Museum of Natural History"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 5500], ["description", "Shedd Aquarium (formally the John G. Shedd Aquarium) is an indoor public aquarium in Chicago, Illinois in the United States that opened on May 30, 1930."], ["photo_url", "http://www.appiantours.com/images/destinations/chicago/sheddaquarium.jpg"], ["title", "Shedd Aquarium"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1800], ["description", "The Adler Planetarium is a public museum dedicated to the study of astronomy and astrophysics."], ["photo_url", "http://static1.squarespace.com/static/50f07ce8e4b07454d6dd2f2f/t/513a62c4e4b0cef39b737f23/1362780875242/adlr7bLR.jpg"], ["title", "Adler Planetarium"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:21:01 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)" for 127.0.0.1 at 2015-07-12 16:21:03 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum" for 127.0.0.1 at 2015-07-12 16:21:07 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Adler%20Planetarium" for 127.0.0.1 at 2015-07-12 16:21:10 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Shedd%20Aquarium" for 127.0.0.1 at 2015-07-12 16:21:13 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History" for 127.0.0.1 at 2015-07-12 16:21:18 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)" for 127.0.0.1 at 2015-07-12 16:21:21 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum" for 127.0.0.1 at 2015-07-12 16:21:24 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History" for 127.0.0.1 at 2015-07-12 16:21:31 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Adler%20Planetarium" for 127.0.0.1 at 2015-07-12 16:21:34 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Shedd%20Aquarium" for 127.0.0.1 at 2015-07-12 16:21:36 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History" for 127.0.0.1 at 2015-07-12 16:21:39 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)" for 127.0.0.1 at 2015-07-12 16:21:42 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum" for 127.0.0.1 at 2015-07-12 16:21:44 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)/delete" for 127.0.0.1 at 2015-07-12 16:24:02 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM "places" WHERE "places"."id" = 42
+Redirected to http://localhost:3000/places
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:24:02 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:24:04 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:24:07 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History/delete" for 127.0.0.1 at 2015-07-12 16:24:17 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 43[0m
+Redirected to http://localhost:3000/places
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:24:17 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-07-12 16:25:16 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:25:18 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 41[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:18 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Shedd%20Aquarium/delete" for 127.0.0.1 at 2015-07-12 16:25:22 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  DELETE FROM "places" WHERE "places"."id" = 44
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:22 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Adler%20Planetarium/delete" for 127.0.0.1 at 2015-07-12 16:25:23 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 45[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:23 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "places"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1500], ["description", "The Chicago Children's Museum is located at Navy Pier in Chicago, Illinois. Where play and learning connect! "], ["photo_url", "http://cdn.c.photoshelter.com/img-get/I0000bOjzUksozlg/s/860/860/MG-3206-Navy-Pier-Chicago-Childrens-Museum.jpg"], ["title", "Chicago Children's Museum"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 2500], ["description", "The Museum of Science and Industry (MSI) is located in Chicago, Illinois, in Jackson Park, in the Hyde Park neighborhood between Lake Michigan and The University of Chicago."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/4/4e/Museum_of_Science_and_Industry.jpg"], ["title", "Museum of Science and Industry (Chicago)"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 3800], ["description", "The Field Museum of Natural History, located in Chicago, Illinois, USA, is one of the largest natural history museums in the world."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/8/89/Field_Museum_of_Natural_History.jpg"], ["title", "Field Museum of Natural History"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 5500], ["description", "Shedd Aquarium (formally the John G. Shedd Aquarium) is an indoor public aquarium in Chicago, Illinois in the United States that opened on May 30, 1930."], ["photo_url", "http://www.appiantours.com/images/destinations/chicago/sheddaquarium.jpg"], ["title", "Shedd Aquarium"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1800], ["description", "The Adler Planetarium is a public museum dedicated to the study of astronomy and astrophysics."], ["photo_url", "http://static1.squarespace.com/static/50f07ce8e4b07454d6dd2f2f/t/513a62c4e4b0cef39b737f23/1362780875242/adlr7bLR.jpg"], ["title", "Adler Planetarium"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:38 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:25:40 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 46[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:40 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)/delete" for 127.0.0.1 at 2015-07-12 16:25:41 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "places" WHERE "places"."id" = 47
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:41 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History/delete" for 127.0.0.1 at 2015-07-12 16:25:42 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 48[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:42 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Shedd%20Aquarium/delete" for 127.0.0.1 at 2015-07-12 16:25:43 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1[0m
+  [1m[35mSQL (19.1ms)[0m  DELETE FROM "places" WHERE "places"."id" = 49
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:43 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Adler%20Planetarium/delete" for 127.0.0.1 at 2015-07-12 16:25:44 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1
+  [1m[36mSQL (1.8ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 50[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:25:44 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "places"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1500], ["description", "The Chicago Children's Museum is located at Navy Pier in Chicago, Illinois. Where play and learning connect! "], ["photo_url", "http://cdn.c.photoshelter.com/img-get/I0000bOjzUksozlg/s/860/860/MG-3206-Navy-Pier-Chicago-Childrens-Museum.jpg"], ["title", "Chicago Children's Museum"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 2500], ["description", "The Museum of Science and Industry (MSI) is located in Chicago, Illinois, in Jackson Park, in the Hyde Park neighborhood between Lake Michigan and The University of Chicago."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/4/4e/Museum_of_Science_and_Industry.jpg"], ["title", "Museum of Science and Industry (Chicago)"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 3800], ["description", "The Field Museum of Natural History, located in Chicago, Illinois, USA, is one of the largest natural history museums in the world."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/8/89/Field_Museum_of_Natural_History.jpg"], ["title", "Field Museum of Natural History"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 5500], ["description", "Shedd Aquarium (formally the John G. Shedd Aquarium) is an indoor public aquarium in Chicago, Illinois in the United States that opened on May 30, 1930."], ["photo_url", "http://www.appiantours.com/images/destinations/chicago/sheddaquarium.jpg"], ["title", "Shedd Aquarium"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1800], ["description", "The Adler Planetarium is a public museum dedicated to the study of astronomy and astrophysics."], ["photo_url", "http://static1.squarespace.com/static/50f07ce8e4b07454d6dd2f2f/t/513a62c4e4b0cef39b737f23/1362780875242/adlr7bLR.jpg"], ["title", "Adler Planetarium"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:26:02 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:26:03 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 51[0m
+Completed 500 Internal Server Error in 12ms
+
+NameError (undefined local variable or method `root' for #<PlacesController:0x007f857a24f5e8>):
+  app/controllers/places_controller.rb:14:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.4ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:26:03 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.4ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)/delete" for 127.0.0.1 at 2015-07-12 16:26:06 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM "places" WHERE "places"."id" = 52
+Completed 500 Internal Server Error in 7ms
+
+NameError (undefined local variable or method `root' for #<PlacesController:0x007f857fee6cc0>):
+  app/controllers/places_controller.rb:14:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.6ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)/delete" for 127.0.0.1 at 2015-07-12 16:26:06 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.2ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:26:19 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.6ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:26:19 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:13:in `delete'
+
+
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/newuser/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (84.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:26:23 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History/delete" for 127.0.0.1 at 2015-07-12 16:26:24 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "places" WHERE "places"."id" = 53
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:26:24 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Shedd%20Aquarium/delete" for 127.0.0.1 at 2015-07-12 16:26:25 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 54[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:26:25 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Adler%20Planetarium/delete" for 127.0.0.1 at 2015-07-12 16:26:26 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  DELETE FROM "places" WHERE "places"."id" = 55
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:26:26 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "places"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1500], ["description", "The Chicago Children's Museum is located at Navy Pier in Chicago, Illinois. Where play and learning connect! "], ["photo_url", "http://cdn.c.photoshelter.com/img-get/I0000bOjzUksozlg/s/860/860/MG-3206-Navy-Pier-Chicago-Childrens-Museum.jpg"], ["title", "Chicago Children's Museum"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 2500], ["description", "The Museum of Science and Industry (MSI) is located in Chicago, Illinois, in Jackson Park, in the Hyde Park neighborhood between Lake Michigan and The University of Chicago."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/4/4e/Museum_of_Science_and_Industry.jpg"], ["title", "Museum of Science and Industry (Chicago)"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 3800], ["description", "The Field Museum of Natural History, located in Chicago, Illinois, USA, is one of the largest natural history museums in the world."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/8/89/Field_Museum_of_Natural_History.jpg"], ["title", "Field Museum of Natural History"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 5500], ["description", "Shedd Aquarium (formally the John G. Shedd Aquarium) is an indoor public aquarium in Chicago, Illinois in the United States that opened on May 30, 1930."], ["photo_url", "http://www.appiantours.com/images/destinations/chicago/sheddaquarium.jpg"], ["title", "Shedd Aquarium"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1800], ["description", "The Adler Planetarium is a public museum dedicated to the study of astronomy and astrophysics."], ["photo_url", "http://static1.squarespace.com/static/50f07ce8e4b07454d6dd2f2f/t/513a62c4e4b0cef39b737f23/1362780875242/adlr7bLR.jpg"], ["title", "Adler Planetarium"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:03 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:27:07 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM "places" WHERE "places"."id" = 56
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:07 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)/delete" for 127.0.0.1 at 2015-07-12 16:27:08 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 57[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:08 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History/delete" for 127.0.0.1 at 2015-07-12 16:27:09 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  DELETE FROM "places" WHERE "places"."id" = 58
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:09 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/places/Shedd%20Aquarium/delete" for 127.0.0.1 at 2015-07-12 16:27:10 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 59[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:10 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Adler%20Planetarium/delete" for 127.0.0.1 at 2015-07-12 16:27:11 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "places" WHERE "places"."id" = 60
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:11 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:13 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM "places"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1500], ["description", "The Chicago Children's Museum is located at Navy Pier in Chicago, Illinois. Where play and learning connect! "], ["photo_url", "http://cdn.c.photoshelter.com/img-get/I0000bOjzUksozlg/s/860/860/MG-3206-Navy-Pier-Chicago-Childrens-Museum.jpg"], ["title", "Chicago Children's Museum"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 2500], ["description", "The Museum of Science and Industry (MSI) is located in Chicago, Illinois, in Jackson Park, in the Hyde Park neighborhood between Lake Michigan and The University of Chicago."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/4/4e/Museum_of_Science_and_Industry.jpg"], ["title", "Museum of Science and Industry (Chicago)"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 3800], ["description", "The Field Museum of Natural History, located in Chicago, Illinois, USA, is one of the largest natural history museums in the world."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/8/89/Field_Museum_of_Natural_History.jpg"], ["title", "Field Museum of Natural History"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 5500], ["description", "Shedd Aquarium (formally the John G. Shedd Aquarium) is an indoor public aquarium in Chicago, Illinois in the United States that opened on May 30, 1930."], ["photo_url", "http://www.appiantours.com/images/destinations/chicago/sheddaquarium.jpg"], ["title", "Shedd Aquarium"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1800], ["description", "The Adler Planetarium is a public museum dedicated to the study of astronomy and astrophysics."], ["photo_url", "http://static1.squarespace.com/static/50f07ce8e4b07454d6dd2f2f/t/513a62c4e4b0cef39b737f23/1362780875242/adlr7bLR.jpg"], ["title", "Adler Planetarium"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:27:21 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Chicago%20Children's%20Museum/delete" for 127.0.0.1 at 2015-07-12 16:28:19 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Chicago Children's Museum"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Chicago Children''s Museum' LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 61[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:28:19 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Museum%20of%20Science%20and%20Industry%20(Chicago)/delete" for 127.0.0.1 at 2015-07-12 16:28:20 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Museum of Science and Industry (Chicago)"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Museum of Science and Industry (Chicago)' LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  DELETE FROM "places" WHERE "places"."id" = 62
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:28:20 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Field%20Museum%20of%20Natural%20History/delete" for 127.0.0.1 at 2015-07-12 16:28:21 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Field Museum of Natural History"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Field Museum of Natural History' LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 63[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:28:21 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Shedd%20Aquarium/delete" for 127.0.0.1 at 2015-07-12 16:28:23 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Shedd Aquarium"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Shedd Aquarium' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "places" WHERE "places"."id" = 64
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-12 16:28:23 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Adler%20Planetarium" for 127.0.0.1 at 2015-07-12 16:28:24 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Adler Planetarium"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Adler Planetarium' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "places"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1500], ["description", "The Chicago Children's Museum is located at Navy Pier in Chicago, Illinois. Where play and learning connect! "], ["photo_url", "http://cdn.c.photoshelter.com/img-get/I0000bOjzUksozlg/s/860/860/MG-3206-Navy-Pier-Chicago-Childrens-Museum.jpg"], ["title", "Chicago Children's Museum"]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 2500], ["description", "The Museum of Science and Industry (MSI) is located in Chicago, Illinois, in Jackson Park, in the Hyde Park neighborhood between Lake Michigan and The University of Chicago."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/4/4e/Museum_of_Science_and_Industry.jpg"], ["title", "Museum of Science and Industry (Chicago)"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 3800], ["description", "The Field Museum of Natural History, located in Chicago, Illinois, USA, is one of the largest natural history museums in the world."], ["photo_url", "https://upload.wikimedia.org/wikipedia/commons/8/89/Field_Museum_of_Natural_History.jpg"], ["title", "Field Museum of Natural History"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 5500], ["description", "Shedd Aquarium (formally the John G. Shedd Aquarium) is an indoor public aquarium in Chicago, Illinois in the United States that opened on May 30, 1930."], ["photo_url", "http://www.appiantours.com/images/destinations/chicago/sheddaquarium.jpg"], ["title", "Shedd Aquarium"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 1800], ["description", "The Adler Planetarium is a public museum dedicated to the study of astronomy and astrophysics."], ["photo_url", "http://static1.squarespace.com/static/50f07ce8e4b07454d6dd2f2f/t/513a62c4e4b0cef39b737f23/1362780875242/adlr7bLR.jpg"], ["title", "Adler Planetarium"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
