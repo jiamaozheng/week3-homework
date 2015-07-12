@@ -1,0 +1,9 @@
+<div class="/place">
+  <h2><%= @place.title %></h2>
+
+  <%= image_tag @place.photo_url, size: "250x250" %>
+
+  <h3>Admission price: $<%= @place.admission_price.to_f/100 %></h3>
+
+  <h4> <p><%= @place.description %></p> </h4> 
+</div>
