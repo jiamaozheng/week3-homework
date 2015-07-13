@@ -1,0 +1,13 @@
+<form action="/places/<%= @place_to_be_edited.title %>/update">
+
+Title:<br> <input type="text" name="title" value="<%= @place_to_be_edited.title %>", size = "50"> <br><br>
+
+Photo URL:<br> <input type="text" name="url" value="<%= @place_to_be_edited.photo_url %>", size = "150"> <br><br>
+
+Price:<br> <input type="text" name="price" value="<%= @place_to_be_edited.admission_price %>", size = "20"> <br><br>
+
+Description: <br> <input type="text" name="description" value="<%= @place_to_be_edited.description %>", size = "150"> <br><br>
+
+<input type="submit">
+
+</form>
