@@ -1,9 +1,9 @@
 <h2> Add a New Place </h2> 
 
 <form action="/places/create">
-  Title: <br> <input name="title" type="text" placeholder="title", size = "50"> <br><br>
-  Photo URL: <br> <input name="photo_url" type="text" placeholder="photo URL", size = "150"><br><br>
-  Price: <br> <input name="admission_price" type="text" placeholder="admission price", size = "20"><br><br>
-  Description: <br> <input name="description" type="text" placeholder="description", size = "150"> <br><br>
-  <input type="submit">
+  Title: <br> <input name="title" type="text" placeholder="title" maxlength = "255" size = "50"> <br><br>
+  Photo URL: <br> <input name="photo_url" type="text" placeholder="photo URL" size = "150"><br><br>
+  Price: <br> <input name="admission_price" type="text" placeholder="admission price" size = "20"><br><br>
+  Description: <br> <input name="description" type="text" placeholder="description" maxlength = "1000" size = "150"> <br><br>
+  <input type="submit", value="Create">
 </form>
